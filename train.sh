@@ -1,0 +1,29 @@
+python main.py \
+-batch_size=500 \
+-num_epoch=500 \
+-block_len=100 \
+-code_rate_k=1 \
+-code_rate_n=3 \
+-enc_rnn=gru \
+-enc_rnn_layer=2 \
+-enc_hidden_size=20 \
+-dec_rnn=gru \
+-dec_rnn_layer=3 \
+-dec_hidden_size=50 \
+-train_enc_ebno_low 10 \
+-train_enc_ebno_high 10 \
+-train_dec_ebno_low 9 \
+-train_dec_ebno_high 11 \
+-train_pd_ebno_low 7 \
+-train_pd_ebno_high 10 \
+-num_train_enc=1 \
+-num_train_dec=5 \
+-num_train_pd=0 \
+-ebno_test_start 6 \
+-ebno_test_end 11 \
+-ebno_points 15 \
+-add_phase_noise=False \
+-phase_noise_freq=[100,1000,10000,100000] \
+-phase_noise_pow=[-30,-60,-80,-100] \
+-add_freq_offset=True \
+-max_cfo=150000 \
